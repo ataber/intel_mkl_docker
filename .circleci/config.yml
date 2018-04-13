@@ -18,7 +18,7 @@ jobs:
 
       - run:
           name: Build image
-          commands: 
+          command: |
               - docker build -t ataber/intel_mkl .:
                   timeout: 1800
 
