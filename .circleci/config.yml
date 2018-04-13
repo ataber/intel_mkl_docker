@@ -17,9 +17,9 @@ jobs:
           command: apk add --no-cache bash
 
       - run:
-          timeout: 1800
           name: Build image
           command: docker build -t ataber/intel_mkl .
+              timeout: 1800
 
       - deploy:
           name: Deploy image to Docker Hub
