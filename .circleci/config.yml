@@ -18,9 +18,8 @@ jobs:
 
       - run:
           name: Build image
-          command: |
-              - docker build -t ataber/intel_mkl .:
-                  timeout: 1800
+          command: docker build -t ataber/intel_mkl .
+          no_output_timeout: "30m"
 
       - deploy:
           name: Deploy image to Docker Hub
