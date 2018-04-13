@@ -25,4 +25,4 @@ jobs:
           name: Deploy image to Docker Hub
           command: |
             docker login --username ${DOCKER_USER} --password ${DOCKER_PASSWORD}
-            docker push ataber/circleci
+            docker push ataber/intel_mkl
